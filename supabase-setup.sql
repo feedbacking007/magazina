@@ -19,6 +19,8 @@ create table orders (
   items integer not null default 0,
   total numeric not null default 0,
   status text not null default 'Në pritje',
+  location text,
+  lines jsonb,
   date text
 );
 
